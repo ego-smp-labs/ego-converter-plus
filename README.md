@@ -5,7 +5,7 @@
 ![EgoConverter++](https://img.shields.io/badge/EgoConverter++-Tool-4F46E5?style=for-the-badge&logo=next.js&logoColor=white)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](./LICENSE)
+[![License](https://img.shields.io/badge/License-ENCL-red.svg?style=for-the-badge)](./LICENSE)
 
 **Next-Gen Minecraft Java to Bedrock Resource Pack Converter** 🛠️
 
@@ -120,6 +120,6 @@ pack-converter-plus/
 
 ## License
 
-Distributed under the MIT License.
+Distributed under the Ego SMP Non-Commercial License (ENCL). See `LICENSE` for more information.
 
 Copyright © 2026 **NirussVn0** and **Ego SMP Labs**.
