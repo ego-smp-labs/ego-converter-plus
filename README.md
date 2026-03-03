@@ -6,6 +6,8 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-ENCL-red.svg?style=for-the-badge)](./LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/ego-smp-labs/ego-converter-plus?style=for-the-badge&logo=github&color=333333)](https://github.com/ego-smp-labs/ego-converter-plus)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jRqnNbupj4)
 
 **Next-Gen Minecraft Java to Bedrock Resource Pack Converter** 🛠️
 

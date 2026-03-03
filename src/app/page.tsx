@@ -794,6 +794,36 @@ export default function EgoConverterPage() {
         </div>
       </div>
       
+      {/* Footer Area */}
+      <div className="max-w-6xl mx-auto mt-8 lg:mt-12 text-center pb-8">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+           <a 
+              href="https://github.com/ego-smp-labs/ego-converter-plus" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+           >
+              <img src="https://img.shields.io/github/stars/ego-smp-labs/ego-converter-plus?style=for-the-badge&logo=github&color=333333" alt="GitHub Repo stars" className="h-7" />
+           </a>
+           
+           <a 
+              href="https://discord.gg/jRqnNbupj4" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+           >
+              <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Discord" className="h-7" />
+           </a>
+        </div>
+        
+        <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
+          Created with ❤️ by <span className="font-bold text-neutral-800 dark:text-neutral-200">NirussVn0</span> and <span className="font-bold text-neutral-800 dark:text-neutral-200">Ego SMP Labs</span>
+        </p>
+        <p className="text-xs text-neutral-400 dark:text-neutral-600 mt-2">
+           Copyright © 2026. Released under the Ego SMP Non-Commercial License (ENCL).
+        </p>
+      </div>
+      
       {/* Scrollbar styling for Webkit */}
       <style dangerouslySetInnerHTML={{__html: `
         .custom-scrollbar::-webkit-scrollbar { width: 8px; height: 8px; }
