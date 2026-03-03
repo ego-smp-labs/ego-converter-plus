@@ -52,7 +52,7 @@ export class ModelConverter {
         
         const cleanName = modelName.split(":").pop() || modelName;
         const cleanTex = texPath.split(":").pop() || texPath;
-        const bedrockId = cleanName.includes(":") ? cleanName : `minecraft:${cleanName}`;
+        const bedrockId = modelName.includes(":") ? modelName : `minecraft:${cleanName}`;
 
         data.itemTextureJson.texture_data[cleanName] = {
           textures: `textures/items/${cleanTex}`,
@@ -105,7 +105,7 @@ export class ModelConverter {
     if (modelJson.elements && Array.isArray(modelJson.elements)) {
       const cleanName = modelName.split(":").pop() || modelName;
       const geoName = `geometry.${cleanName}`;
-      const bedrockId = cleanName.includes(":") ? cleanName : `minecraft:${cleanName}`;
+      const bedrockId = modelName.includes(":") ? modelName : `minecraft:${cleanName}`;
 
       data.geometryFiles[`${cleanName}.json`] = {
         format_version: "1.12.0",
