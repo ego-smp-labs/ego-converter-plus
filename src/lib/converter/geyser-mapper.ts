@@ -50,9 +50,19 @@ export class GeyserMapper {
     }
 
     // 2) Process 1.21.4+ Data-Driven Items
+    // IMPORTANT: Only vanilla (minecraft:*) items may be used as top-level keys!
+    // Custom namespace items (e.g., sabi:chaos_mace from assets/sabi/items/)
+    // are model rendering definitions, NOT Java items.
+    // Geyser validates keys against the Java item registry and rejects unknowns.
+    // Custom models are already referenced INSIDE vanilla item entries
+    // (via range_dispatch / select / model nodes pointing to "sabi:chaos_mace").
     for (const [itemName, itemJson] of Object.entries(javaPack.items)) {
-      // e.g. itemName = "minecraft:stick" or "custom:magic_wand"
       const baseItem = itemName.includes(":") ? itemName : `minecraft:${itemName}`;
+
+      // Skip non-vanilla namespaces — they are model definitions, not base items
+      if (baseItem.includes(":") && !baseItem.startsWith("minecraft:")) {
+        continue;
+      }
 
       if (!itemJson.model || !itemJson.model.type) continue;
 
